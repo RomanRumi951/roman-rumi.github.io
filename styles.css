@@ -1,0 +1,251 @@
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: linear-gradient(135deg, #1c3144, #001f33);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add this CSS to your existing styles.css or create a new CSS file */
+
+/* Make the header and nav sticky */
+/* header, nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.8); Adjust the background color as needed
+} */
+
+/* Adjust other styles as necessary */
+
+
+
+header {
+  text-align: center;
+  padding: 30px 0;
+}
+
+header h1 {
+  font-size: 36px;
+  background-image: linear-gradient(to right, #3498db, #e74c3c); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header p {
+  font-size: 16px;
+  background-image: linear-gradient(to right, #FD971F, #AE81FF, #FD971F); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Add this CSS to your existing styles.css or create a new CSS file */
+#about {
+  max-height: 300px; /* Adjust the height as needed */
+  overflow-y: auto;
+  backdrop-filter: blur(5px); /* Add a blur effect */
+  transition: backdrop-filter 0.3s ease;
+}
+
+#about:hover {
+  backdrop-filter: none; /* Remove the blur effect on hover */
+}
+
+/* Add this CSS to your existing styles.css or create a new CSS file */
+#projects {
+  max-height: 300px; /* Adjust the height as needed */
+  overflow-y: auto;
+  backdrop-filter: blur(5px); /* Add a blur effect */
+  transition: backdrop-filter 0.3s ease;
+}
+#projects:hover {
+  backdrop-filter: none; /* Remove the blur effect on hover */
+}
+
+#about h2 {
+  font-size: 24px;
+  background-image: linear-gradient(to right, #AE81FF, #FD971F, #3498db); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#skills {
+  max-height: 300px; /* Adjust the height as needed */
+  overflow-y: auto;
+  backdrop-filter: blur(5px); /* Add a blur effect */
+  transition: backdrop-filter 0.3s ease;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+#skills:hover {
+  backdrop-filter: none; /* Remove the blur effect on hover */
+}
+
+#skills h2 {
+  font-size: 24px;
+  background-image: linear-gradient(180deg, #EF7, #9B51FA, #1ad5d5); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  grid-gap: 10px;
+  
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: linear-gradient(135deg,  #ffea00, #77ff00, #e1ff00); /* Adjust colors as needed */
+  padding: 10px;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.project-item img {
+  width: 100px;
+  height: 100px;
+  /* display: block; */
+}
+
+.project-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-item:hover .overlay {
+  opacity: 1;
+}
+
+#projects h2 {
+  font-size: 24px;
+  background-image: linear-gradient(to right, #FF5733, #4CAF50, #3498db); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Add this CSS to your existing styles.css or create a new CSS file */
+#contact h2 {
+  font-size: 24px;
+  background-image: linear-gradient(to right, #FFD700, #FF5733, #AE81FF); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.profile-image {
+  width: 110px;
+  height: 110px;
+  background-image: url('Roman_Rumi_Last_Inshot.jpg');
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 3px solid #fff;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+nav ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: #fff;
+}
+
+section h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  margin: 10px;
+  color: #3498db;
+  font-size: 24px;
+}
+
+/* Add this CSS to your existing styles.css or create a new CSS file */
+#contact {
+  background: linear-gradient(135deg, #3498db, #0a4321, #0d2464);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+  transition: color 0.3s;
+}
+
+.contact-links a:hover {
+  color: #3498db;
+}
+
+.contact-links img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
